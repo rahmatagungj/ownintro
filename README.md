@@ -3,7 +3,7 @@ Library for Onboarding and Intro
 
 ## Installation
 ```html 
-<script src="https://cdn.jsdelivr.net/gh/rahmatagungj/ownintro/ownintro.min.js"></script>
+<script src="./ownintro.min.js"></script>
 ```
 
 ## Usage
