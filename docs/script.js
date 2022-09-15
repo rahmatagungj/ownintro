@@ -8,15 +8,25 @@ const STEPS = [
     element: document.getElementById("quote"),
   },
   {
-    content: "Work also with elements that are in safe areas",
+    content: "You can change the position of the modal",
     element: document.getElementById("on-right"),
-  }
+    position: "left",
+  },
+  {
+    content: "Just use like this, easy right?",
+    element: document.getElementById("usage"),
+    position: "top",
+  },
 ]
+
+const buttonStart = document.getElementById("start")
 
 const ownIntro = new Ownintro(STEPS, {
   buttonBackText: "Back",
   buttonNextText: "Next",
   buttonFinishText: "Finish",
-  hideOnClickOutside: true,
 })
-ownIntro.start()
+
+buttonStart.addEventListener("click", () => {
+  ownIntro.start()
+})
